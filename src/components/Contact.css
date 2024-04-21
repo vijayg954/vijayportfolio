@@ -1,0 +1,86 @@
+.contact {
+  width: 100%;
+  padding: 50px 10% 50px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-top:1px solid rgb(26, 48, 48) ;
+  margin-top: 2.5rem;
+
+}
+.contact h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  border-bottom: 2px solid cyan;
+  display: inline;
+}
+
+.contact p {
+  width: 90%;
+  margin-top: 22px;
+  font-size: 1.1rem;
+}
+.contact div{
+    width: 25%;
+}
+form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1rem;
+  border: 2px solid cyan;
+  padding: 2rem;
+}
+form input {
+    font-size: 1.1rem;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+form input:hover,
+form input:focus {
+  box-shadow: 5px 5px 10px cyan;
+  border-color: cyan;
+}
+@media (max-width: 980px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  form {
+
+      width: 95%;
+      border: 2px solid cyan;
+      padding: 2rem;
+  }
+
+  
+}
+
+  
+
+form .formbtn{
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(60, 126, 226, 0.4);;
+  color: white;
+  width: 9rem;
+  border-radius: 5px;
+}
+form .formbtn:hover{
+  filter: drop-shadow(4px 4px 5px cyan);
+}

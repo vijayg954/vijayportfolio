@@ -1,0 +1,117 @@
+#services {
+  /* height: 55vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 7% 3% 7%;
+  /* margin-bottom: 5rem; */
+  border-top: 1px solid rgb(33, 40, 40);
+}
+.services p,
+.services h1 {
+  text-align: center;
+}
+.services h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  border-bottom: 2px solid cyan;
+  margin-bottom: 10px;
+}
+.servicecards {
+  display: grid;
+  gap: 40px;
+  /* width: 45rem; */
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  width: 80vw;
+}
+.servicecard {
+  display: flex;
+  /* width: 21rem; */
+  border: 2px solid cyan;
+  border-radius: 5%;
+  /* border-style: dotted ; */
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.servicecard:after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  height: 200px;
+  width: 20px;
+  background-color: rgb(242, 255, 0);
+  filter: blur(50px);
+  transition: 0.8s;
+  transform: rotate(30deg);
+}
+.servicecard:hover:after {
+  left: 200%;
+}
+.servicecard p {
+  text-align: start;
+}
+.servicecard:hover {
+  border-color: red;
+  box-shadow: 0 11px 16px red;
+  transform: translateY(-10px);
+}
+.servicecard h3 {
+  letter-spacing: 0.9;
+  color: aquamarine;
+  font-size: 1.4rem;
+  transition: 0.6s;
+}
+.servicecard:hover h3,
+.servicecard:hover #serviceid {
+  color: rgb(123, 213, 213);
+}
+.servicecard a {
+  color: rgb(197, 233, 222);
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  border: 2px solid rgb(97, 186, 208);
+  width: 65%;
+}
+
+#serviceid {
+  color: white;
+  font-size: 2.3rem;
+}
+@media (max-width: 900px) {
+  .servicecards {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    /* width: 70vw; */
+  }
+  #services {
+    margin-top: 2rem;
+    /* padding-top: 1rem; */
+  }
+}
+@media (max-width: 550px) {
+  .servicecards {
+    display: grid;
+    gap: 9px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+    width: 78vw;
+    /* margin-bottom: 2rem; */
+  }
+  .services h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-bottom: 2px solid cyan;
+    margin-bottom: 10px;
+  }
+}
