@@ -40,7 +40,7 @@ const Projects = () => {
                 and JAVASCRIPT. in this game one player is user and another one
                 is computer.
               </p>
-              <a href="https://rockpapergamevg.netlify.app/">
+              <a href="https://rockpaperscissoregame.netlify.app/">
                 Read more <i className="fa-solid fa-arrow-right-long"></i>
               </a>
             </div>

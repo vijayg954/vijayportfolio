@@ -1,3 +1,4 @@
+
 // const express = require('express')
 import express from "express"
 // const mongoose= require ("mongoose")
@@ -8,7 +9,7 @@ import cors from "cors"
 import  bodyParser from"body-parser"
 
 main().catch(err => console.log(err));
-
+// 'mongodb+srv://vijayg954:vijayg954@vg1.b9bmkni.mongodb.net/vg11?retryWrites=true&w=majority&appName=vg1'
 async function main() {
     await mongoose.connect('mongodb+srv://vijayg954:vijayg954@vg1.b9bmkni.mongodb.net/vg11?retryWrites=true&w=majority&appName=vg1');
 
@@ -24,7 +25,7 @@ const userschema = new mongoose.Schema({
   const Uservg= mongoose.model('Uservg', userschema);
 
 const app = express()
-const port = 3000
+const port = 3000;
 app.use (cors());
 app.use (bodyParser.json());
 app.post('/', async(req, res) => {

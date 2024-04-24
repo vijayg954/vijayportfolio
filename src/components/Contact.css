@@ -15,7 +15,9 @@
   border-bottom: 2px solid cyan;
   display: inline;
 }
-
+form .errmsg{
+  width: 80%;
+}
 .contact p {
   width: 90%;
   margin-top: 22px;
