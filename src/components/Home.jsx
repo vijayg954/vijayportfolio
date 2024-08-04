@@ -1,9 +1,12 @@
-import React from "react";
+// import React from "react";
 import "./Home.css";
 import heroimg from "./../../public/img4.jpg";
 import { motion } from "framer-motion";
+import vijayresume from "./../../public/VIJAYRESUME.pdf"
+
 
 const Home = () => {
+  
   AOS.init();
   return (
     <div>
@@ -95,7 +98,7 @@ const Home = () => {
                 data-aos-duration="1500"
                 data-aos-delay="400"
               >
-                <a href="./../../public/VIJAY RESUME.pdf" download="VIJAY RESUME">
+                <a href={vijayresume} download="VIJAY RESUME">
                   <button className="btns">Download Resume</button>
                 </a>
               </div>

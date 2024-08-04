@@ -1,8 +1,11 @@
-import React from "react";
+// import React from "react";
 import proimg from "./../../public/img7.png";
 import proimg1 from "./../../public/img8.png";
 import proimg2 from "./../../public/img9.png";
 import proimg3 from "./../../public/img12.png";
+import book from "./../../public/book.png";
+import weather from "./../../public/weather.png";
+import calculator from "./../../public/calculator.png";
 import "./Projects.css";
 
 const Projects = () => {
@@ -18,14 +21,29 @@ const Projects = () => {
           >
             Project Title
           </h2>
-          <p  data-aos="fade-in" data-aos-duration="2000" data-aos-delay="700">
-            
-            Here are our some projects <br/>
+          <p data-aos="fade-in" data-aos-duration="2000" data-aos-delay="700">
+            Here are our some projects <br />
             click on projects for live preview
           </p>
         </div>
 
         <div className="projectcards">
+          <div
+            className="projectcard"
+            data-aos="fade-up-left"
+            data-aos-duration="2000"
+            data-aos-delay="900"
+          >
+            <img src={book} alt="" />
+            <div>
+              <h1>Book Store Full Stack Web App</h1>
+              <p>created by using React, Nodejs, MongoDB Atlas Tailwind CSS</p>
+              <a href="https://bookapp123.netlify.app/">
+                Read more <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
           <div
             className="projectcard"
             data-aos="fade-down-left"
@@ -41,6 +59,26 @@ const Projects = () => {
                 is computer.
               </p>
               <a href="https://rockpaperscissoregame.netlify.app/">
+                Read more <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="projectcard"
+            data-aos="fade-up-right"
+            data-aos-duration="2000"
+            data-aos-delay="700"
+          >
+            <img src={proimg2} alt="" />
+            <div>
+              <h1>Animated OCHI WEBSITE CLONE</h1>
+              <p>
+                A very attractive animated website OCHI's clone made by me with
+                the help of REACT, FRAMER MOTION, GSAP, LOCOMOTIVE SCROLL(run in
+                desktop view)
+              </p>
+              <a href="https://projectochiclone.netlify.app/">
                 Read more <i className="fa-solid fa-arrow-right-long"></i>
               </a>
             </div>
@@ -67,22 +105,24 @@ const Projects = () => {
 
           <div
             className="projectcard"
-            data-aos="fade-up-right"
+            data-aos="fade-down-right"
             data-aos-duration="2000"
-            data-aos-delay="700"
+            data-aos-delay="300"
           >
-            <img src={proimg2} alt="" />
-            <div>
-              <h1>Animated OCHI WEBSITE CLONE</h1>
-              <p>
-                A very attractive animated website OCHI's clone made by me with
-                the help of REACT, FRAMER MOTION, GSAP, LOCOMOTIVE SCROLL(run in desktop view)
-              </p>
-              <a href="https://projectochiclone.netlify.app/">
-                Read more <i className="fa-solid fa-arrow-right-long"></i>
-              </a>
-            </div>
+            <img src={calculator} alt="" />
+            
           </div>
+
+          <div
+            className="projectcard"
+            data-aos="fade-down-right"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
+            <img src={weather} alt="" />
+            
+          </div>
+
 
           <div
             className="projectcard"
