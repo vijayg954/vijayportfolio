@@ -4,6 +4,8 @@ import proimg1 from "./../../public/img8.png";
 import proimg2 from "./../../public/img9.png";
 import proimg3 from "./../../public/img12.png";
 import book from "./../../public/book.png";
+import blog from "./../../public/blog.jpg.png";
+import ecom from "./../../public/ecom.png";
 import weather from "./../../public/weather.png";
 import calculator from "./../../public/calculator.png";
 import "./Projects.css";
@@ -28,6 +30,42 @@ const Projects = () => {
         </div>
 
         <div className="projectcards">
+        
+          <div
+            className="projectcard"
+            data-aos="fade-up-left"
+            data-aos-duration="2000"
+            data-aos-delay="900"
+          >
+            <img src={ecom} alt="" />
+            <div>
+              <h1>Ecommerce full Stack Web App</h1>
+              <p>created by using React, Nodejs, MongoDB Atlas, Express js</p>
+              <a href="https://ecommerce27.vercel.app/">
+                Read more <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <div
+            className="projectcard"
+            data-aos="fade-up-left"
+            data-aos-duration="2000"
+            data-aos-delay="900"
+          >
+            <img src={blog} alt="" />
+            <div>
+              <h1> Studytoppers Full Stack Web App</h1>
+              <p>created by using React, Nodejs, MongoDB Atlas, Express js</p>
+              <a href="https://studytoppers.netlify.app">
+                Read more <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+
+
           <div
             className="projectcard"
             data-aos="fade-up-left"
@@ -124,24 +162,7 @@ const Projects = () => {
           </div>
 
 
-          <div
-            className="projectcard"
-            data-aos="fade-up-left"
-            data-aos-duration="2000"
-            data-aos-delay="900"
-          >
-            <img src={proimg3} alt="" />
-            <div>
-              <h1>Animated Loader circle shape</h1>
-              <p>
-                in this small project i have created 3 circluler animated Loader
-                using Html and CSS{" "}
-              </p>
-              <a href="https://circleloaderproject.netlify.app/">
-                Read more <i className="fa-solid fa-arrow-right-long"></i>
-              </a>
-            </div>
-          </div>
+         
         </div>
       </section>
     </div>

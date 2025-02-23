@@ -2,7 +2,7 @@
 import "./Home.css";
 import heroimg from "./../../public/img4.jpg";
 import { motion } from "framer-motion";
-import vijayresume from "./../../public/VIJAYRESUME.pdf"
+import vijayresume from "./../../public/Vijay Resume27.pdf"
 
 
 const Home = () => {
