@@ -8,6 +8,7 @@ import blog from "./../../public/blog.jpg.png";
 import ecom from "./../../public/ecom.png";
 import weather from "./../../public/weather.png";
 import calculator from "./../../public/calculator.png";
+import palystoreapps from "./../../public/palystoreapps.png";
 import "./Projects.css";
 
 const Projects = () => {
@@ -136,6 +137,23 @@ const Projects = () => {
                 data in card forms{" "}
               </p>
               <a href="https://fetchcardsdata.netlify.app/">
+                Read more <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            className="projectcard"
+            data-aos="fade-down-right"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
+            <img src={palystoreapps} alt="" />
+            <div>
+              <h1>All apps on play store</h1>
+              <p>
+               
+              </p>
+              <a href="https://play.google.com/store/apps/developer?id=vijay+kumar+gupta&hl=en_IN">
                 Read more <i className="fa-solid fa-arrow-right-long"></i>
               </a>
             </div>
